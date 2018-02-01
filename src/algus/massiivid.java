@@ -7,6 +7,7 @@ import java.util.Arrays;
  * @author ketuo
  */
 public class massiivid {
+    //funktsioon mis tagastab kaheelemendilise massiivi, mille esimeseks elemendiks on etteantud arvudest suurim ja teiseks vähim
     public static int summa(int[] arvud){
      int summa=0;
 
@@ -16,11 +17,43 @@ public class massiivid {
 
       } 
       return summa;
+    }   
+    public static double keskmine(int[] arvud){
+      return summa(arvud)*0.1/arvud.length;
+    
+    }
+    public static int[] piirid(int[] arvud){
+    int[] vastus=new int[2];
+    if(arvud==null){
+        throw new RuntimeException("parameetri väärtus null");
+        
+    }
+    if(arvud.length==0){
+        throw new RuntimeException("parameetriks tühi massiiv");
         
         
     }
+    int max=0;
+    int min=100000;
+        for(int i=0;i<arvud.length; i++){
+        if(arvud[i]>max){
+            max=arvud[i];
+        }
+        if(arvud[i]<min){
+            min=arvud[i];
+        }
+    vastus[0]=min;
+    vastus[1]=max;
+        }return vastus;
+    
+        }
     public static void main(String[] arg){
      int[] pikkused={176, 163, 158, 171, 169}; 
+     int[] t = piirid(pikkused);
+     System.out.println(summa(pikkused));
+     System.out.println(keskmine(pikkused));
+     System.out.println(t[0]+" "+t[1]);
+     
      System.out.println("Kokku: "+pikkused.length);
      System.out.println(pikkused[0]+" "+pikkused[pikkused.length-1]);
      int sum;
