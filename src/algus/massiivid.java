@@ -30,6 +30,9 @@ public class massiivid {
         sum = sum + pikkused[i];
      }
      System.out.println("summa on: "+sum);
+     
+     
+     
      int summa=0;
 
       for(int i=0; i<pikkused.length; i++){
