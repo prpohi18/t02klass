@@ -17,7 +17,12 @@ public class Algus {
     }
     public static void toatemperatuur(int tuba){
         if(tuba < 35){System.out.println("pane kütet juurde");}
-        else {System.out.println("piisavalt soe");
+        else {
+            if(tuba > 47){
+               System.out.println("võta kütet maha"); }
+            else{
+               System.out.println("piisavalt soe");
+            }
         }
         
         
