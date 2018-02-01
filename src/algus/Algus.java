@@ -11,14 +11,13 @@ package algus;
  */
 public class Algus {
     public static void ilmakommentaar(int temperatuur){
-        if(temperatuur>0){System.outPrintIn("sulab");
-        }
-        else{System.out.printIn("jäätab");
+        if(temperatuur>0){System.out.println("sulab");}
+        else{System.out.println("jäätab");
         }
     }
     public static void toatemperatuur(int tuba){
-        if(tuba < 35){System.out.printIn("pane kütet juurde")}
-        else {System.out.printIn("piisavalt soe")
+        if(tuba < 35){System.out.println("pane kütet juurde");}
+        else {System.out.println("piisavalt soe");
         }
         
         
@@ -27,8 +26,9 @@ public class Algus {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.printIn("Hello,Web");
+        System.out.println("Hello,Web");
         ilmakommentaar(3);
+        toatemperatuur(38);
     }
     
 }
