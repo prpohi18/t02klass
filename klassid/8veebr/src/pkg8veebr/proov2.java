@@ -39,5 +39,5 @@ public class proov2 {
        }
        System.out.println("Kaubeim pall: "+kaugeimpall);
     }
-    
+   
 }
