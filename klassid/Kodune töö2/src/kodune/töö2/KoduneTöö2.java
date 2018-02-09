@@ -9,7 +9,7 @@ package kodune.töö2;
  *
  * @author ketuo
  */
-public class KoduneTöö2 {
+public class KoduneTöö2 {11
 
     /**
      * @param args the command line arguments

@@ -9,6 +9,6 @@ package kodune.töö2;
  *
  * @author ketuo
  */
-public class class1 {
+public class class1 {11
     
 }
