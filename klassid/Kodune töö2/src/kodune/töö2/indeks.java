@@ -27,13 +27,13 @@ public class indeks {
     public String seisund(){
         
         if (KMI() >= 30) {
-            return "Persoon on rasvunud";
+            return "ta on rasvunud";
         } else if ((30>KMI())&&(KMI()>25)) {
-            return "Persoon on ülekaalus";
+            return "ta on ülekaalus";
         } else if ((25>KMI())&&(KMI()>19)) {
-            return "Persoon on ideaalkaalus";
+            return "ta on ideaalkaalus";
         } else {
-            return "Persoon on alakaalus";
+            return "ta on alakaalus";
         } 
         
         
@@ -55,6 +55,6 @@ public class indeks {
     
     @Override
     public String toString(){
-     return "Persoon ("+x+" kg, "+y+"cm)"; 
+     return "Persooni kaal on "+x+" kg ja pikkus "+y+" cm"; 
     }
 }
