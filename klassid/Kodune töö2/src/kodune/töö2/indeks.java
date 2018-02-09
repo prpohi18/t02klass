@@ -49,7 +49,7 @@ public class indeks {
       return "Teise persooni KMI on suurem";  
     }
         
-        
+         
     }
     
     
