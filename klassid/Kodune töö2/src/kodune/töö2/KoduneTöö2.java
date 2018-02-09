@@ -20,7 +20,7 @@ public class KoduneTöö2 {
     
    
 }
-/*Persoon (65.0 kg, 168.0cm)
+/*Persoon  (65.0 kg, 168.0cm)
 Persoon (70.0 kg, 150.0cm)
 esimese persooni kehamassiindeks on: 23 ja Persoon on ideaalkaalus
 teise persooni kehamassiindeks on: 31 ja Persoon on rasvunud
