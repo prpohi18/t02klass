@@ -43,9 +43,10 @@ public class Opilased{
 		opilane.aine3eap = aine3eap;
 		opilane.aine3hinne = aine3hinne;	
 	
-		double kkh = opilane.kkh(aine1hinne, aine2hinne, aine3hinne);	
-		double eapsum = opilane.kkh(aine1eap, aine2eap, aine3eap);	
-		System.out.printf("Õpilane %.1f õppekava maht on %.1f ja KKH on %.2f", opilane.kood, eapsum, kkh);	
+		double hinnesum = opilane.hinnesum(aine1hinne, aine2hinne, aine3hinne);	
+		double eapsum = opilane.eapsum(aine1eap, aine2eap, aine3eap);	
+		double kkh = opilane.kkh(aine1eap, aine1hinne, aine2eap, aine2hinne, aine3eap, aine3hinne);	
+		System.out.printf("Õpilase kood: %.0f \nÕppekava täidetud mahus: %.0fEAP \nHinnete summa: %.2f \nKKH: %.2f", opilane.kood, eapsum, hinnesum, kkh);	
 	}
 }
 
