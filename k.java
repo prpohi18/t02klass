@@ -11,7 +11,7 @@ public class k{
       if ((entry.length()==17 || entry.length()==8) && entry.substring(2,3).equals(":")) {
         Mac a=new Mac(entry);
         System.out.println("vendor: "+a.convert());
-        System.out.println();
+        System.out.println(a.listSearched());
       }else if (entry.equals("exit") || entry.equals("quit") || entry.equals("stop")) {
         convert = 0;
       }else{
