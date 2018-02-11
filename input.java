@@ -1,20 +1,16 @@
 public class input {
     public static void main(String[] arg) {
-        liigaasta aasta = new liigaasta (arg[0]);
-        System.out.println("See " + aasta.liigaastaKontroll() + " liigaasta.");
+        if (arg.length != 0) {
+            
+            liigaasta[] aasta = new liigaasta[arg.length];
+            
+            for (int i=0; i<arg.length; i++) {
+                aasta[i] = new liigaasta(arg[i]);
+                System.out.println(aasta[i] + " " + aasta[i].liigaastaKontroll() + " liigaasta.");
+            }
+            
+        } else {
+            System.out.println("Argumendid puuduvad.\n");
+        }
     }
 }
-
-/*
-
->java input 2000
-See on liigaasta.
-
-
-> java input 2002
-See ei ole liigaasta.
-
->java input 2004
-See on liigaasta.
-
-*/
