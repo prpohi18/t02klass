@@ -1,0 +1,3 @@
+Juba otsitud MAC aadressid:
+00:e0:4c
+00:23:DF
