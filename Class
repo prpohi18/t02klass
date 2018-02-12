@@ -1,0 +1,18 @@
+class aircraft{
+  int seats;
+  int passengers; 
+  int cruiseSpeed; 
+  double fuelCapacity; 
+  double fuelBurnRate; 
+
+  public double calculateEndurance(){
+    double endurance;
+    endurance = fuelCapacity / fuelBurnRate;
+    return endurance;
+  }
+
+
+  public int free_spots(){
+    return seats - passengers;
+  }
+}
