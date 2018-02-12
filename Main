@@ -1,0 +1,21 @@
+public class lesson{
+  public static void main(String[] args){
+
+
+    aircraft lennart = new aircraft(); 
+
+    double meriEndurance;
+    lennart.seats = 170;
+    lennart.passengers = 150;
+    lennart.cruiseSpeed = 500;
+    lennart.fuelCapacity = 200;
+    lennart.fuelBurnRate = 10;
+
+    System.out.println("Lennuk lennart: ");
+    System.out.println();
+    System.out.println("Lennuki vastupidavus on: "+lennart.calculateEndurance()+" tundi");
+    System.out.println("Lennuki kiirus on: "+lennart.cruiseSpeed+"km/h");
+    System.out.println("Lennuk mahutab: "+lennart.passengers+" reisijat");
+    System.out.println("Lennukis on vabu kohti: "+lennart.free_spots());
+  }
+}
