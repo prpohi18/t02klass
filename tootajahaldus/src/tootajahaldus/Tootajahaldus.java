@@ -13,6 +13,10 @@ package tootajahaldus;
 public class Tootajahaldus {
     
     public static void main(String[] args) {
+        String firstname, lastname, title, dataname, cont;
+        double wage;
+        
+        
         tootaja Mari_Mets = new tootaja ();
         Mari_Mets.eesnimi = "Mari";
         Mari_Mets.perenimi = "Mets";
