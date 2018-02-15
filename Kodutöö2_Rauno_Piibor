@@ -1,0 +1,66 @@
+
+
+package kodutöö_2;
+
+
+public class joogid {
+    public String nimi;
+    public float hind, kogus;
+}
+
+
+
+package kodutöö_2;
+
+public class Kodutöö_2 {
+
+    
+    public static void main(String[] args) {
+        
+        joogid Aura_õunamahl = new joogid();
+        Aura_õunamahl.hind = (float) 0.75;
+        Aura_õunamahl.kogus = 1;
+        
+        joogid Põltsamaa_ploominektar = new joogid();
+        Põltsamaa_ploominektar.hind = (float) 0.79;
+        Põltsamaa_ploominektar.kogus = 2;
+         
+        joogid Reynar_Granaatõunamahl = new joogid();
+        Reynar_Granaatõunamahl.hind = (float) 2.69;
+        Reynar_Granaatõunamahl.kogus = 4;
+        
+        joogid Aura_Fresh_mahlajook_Multifruit = new joogid();
+        Aura_Fresh_mahlajook_Multifruit.hind = (float) 1.65;
+        Aura_Fresh_mahlajook_Multifruit.kogus = 2;       
+        
+        float kogusumma;
+        float kogu_kogus;
+        float keskmine;
+        int kokku = 4;
+        
+
+         
+         
+        kogusumma = Aura_õunamahl.hind + Põltsamaa_ploominektar.hind + Reynar_Granaatõunamahl.hind + Aura_Fresh_mahlajook_Multifruit.hind;
+        keskmine = (Aura_õunamahl.hind + Põltsamaa_ploominektar.hind + Reynar_Granaatõunamahl.hind + Aura_Fresh_mahlajook_Multifruit.hind)/kokku;
+        kogu_kogus = Aura_õunamahl.kogus + Põltsamaa_ploominektar.kogus + Reynar_Granaatõunamahl.kogus + Aura_Fresh_mahlajook_Multifruit.kogus; 
+        
+        
+        
+        
+        System.out.println("Kogusumma: "+kogusumma);
+        System.out.println("kogu kogus: "+kogu_kogus);
+        System.out.println("keskmine hind: "+keskmine);
+        
+        
+        
+    }    
+}
+    
+
+/*
+Kogusumma: 5.88
+kogu kogus: 9.0
+keskmine hind: 1.47
+
+*/
