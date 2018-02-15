@@ -21,5 +21,25 @@ public class Kodutoo {
         System.out.println(p2);
         p1.fight(p2);
     }
-    
+    /*
+    run:
+        Sõdalane eludega: 20.0, ründega: 5.0, kaitsega: 1.0
+        Sõdalane eludega: 20.0, ründega: 4.0, kaitsega: 3.0
+        Sõdalane üks lõi teist sõdalast 2.0 võrra, sõdalasel elusid jäänud 18.0/20.0
+        Sõdalane kaks lõi esimest sõdalast 3.0 võrra, sõdalasel elusid jäänud 17.0/20.0
+        Sõdalane üks lõi teist sõdalast 2.0 võrra, sõdalasel elusid jäänud 16.0/20.0
+        Sõdalane kaks lõi esimest sõdalast 3.0 võrra, sõdalasel elusid jäänud 14.0/20.0
+        Sõdalane üks lõi teist sõdalast 2.0 võrra, sõdalasel elusid jäänud 14.0/20.0
+        Sõdalane kaks lõi esimest sõdalast 3.0 võrra, sõdalasel elusid jäänud 11.0/20.0
+        Sõdalane üks lõi teist sõdalast 2.0 võrra, sõdalasel elusid jäänud 12.0/20.0
+        Sõdalane kaks lõi esimest sõdalast 3.0 võrra, sõdalasel elusid jäänud 8.0/20.0
+        Sõdalane üks lõi teist sõdalast 2.0 võrra, sõdalasel elusid jäänud 10.0/20.0
+        Sõdalane kaks lõi esimest sõdalast 3.0 võrra, sõdalasel elusid jäänud 5.0/20.0
+        Sõdalane üks lõi teist sõdalast 2.0 võrra, sõdalasel elusid jäänud 8.0/20.0
+        Sõdalane kaks lõi esimest sõdalast 3.0 võrra, sõdalasel elusid jäänud 2.0/20.0
+        Sõdalane üks lõi teist sõdalast 2.0 võrra, sõdalasel elusid jäänud 6.0/20.0
+        Sõdalane kaks lõi esimest sõdalast 3.0 võrra, sõdalasel elusid jäänud -1.0/20.0
+        Sõdalane kaks võitis
+        BUILD SUCCESSFUL (total time: 0 seconds)
+    */
 }
