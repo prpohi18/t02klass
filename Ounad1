@@ -1,0 +1,60 @@
+//Õunad
+//10Puudub
+//299"Valge klaar"
+//343"Kaimo"
+//465"Ligol"
+//kevad 1
+//suvi 2
+//sügis 3
+//talv 4
+import java.util.Arrays;
+import java.util.*;
+
+public class Ounad1{
+	public static void main(String[] arg){
+		Viljad puudub=new Viljad("100");
+		Viljad valgeklaar=new Viljad("299");
+		Viljad kaimo=new Viljad("343");
+		Viljad ligol=new Viljad("465");
+		//prindin välja sisestatud aastaajad.
+		System.out.println("Tähisega "+puudub.aastaaeg()+" on õunad aastaajast "+puudub.aastaaegNimi()+"."+" Kevadele puuduvad omased õunasordid, seetõttu on aastane mahutoodang "+puudub.maht()+" tuhat õuna.");
+		System.out.println("Valge klaar on tähisega "+valgeklaar.aastaaeg()+" ja aastaajast "+valgeklaar.aastaaegNimi()+"."+" Tema mahutoodang on "+valgeklaar.maht()+" tuhat õuna.");
+		System.out.println("Kaimo on tähisega "+kaimo.aastaaeg()+" ja aastaajast "+kaimo.aastaaegNimi()+"."+" Tema mahutoodang on "+kaimo.maht()+" tuhat õuna.");
+		System.out.println("Ligol on tähisega "+ligol.aastaaeg()+" ja aastaajast "+ligol.aastaaegNimi()+"."+" Tema mahutoodang on "+ligol.maht()+" tuhat õuna.");
+	}
+} 
+//Väljatrükk:
+//Tähisega 1 on õunad aastaajast kevad. Kevadele puuduvad omased õunasordid, seetõttu on aastane mahutoodang 0 tuhat õuna.
+//Valge klaar on tähisega 2 ja aastaajast suvi. Tema mahutoodang on 99 tuhat õuna.
+//Kaimo on tähisega 3 ja aastaajast sügis. Tema mahutoodang on 43 tuhat õuna.
+//Ligol on tähisega 4 ja aastaajast talv. Tema mahutoodang on 65 tuhat õuna.
+
+___________________________________________________
+*****ERALDI TUGIFAIL*****
+
+public class Viljad{
+	
+	protected String andmed;
+	public Viljad(String uusKood){
+	//koht hetkel andmete sisestamiseks
+		andmed=uusKood;
+	}
+	
+	public int aastaaeg(){
+		return Integer.parseInt(andmed.substring(0,1));
+	}
+	
+	public int maht(){
+		return Integer.parseInt(andmed.substring(1,3));
+	}
+	
+	//public int nimetus(){
+	//	return Integer.parseInt(andmed.substring(3,30));
+	//}
+	
+	//anname aastaaegadele nimetused
+	public String aastaaegNimi(){
+		String[] aastaaegNimed={"","kevad","suvi","sügis","talv"};
+		return aastaaegNimed[aastaaeg()];
+	}
+} 
