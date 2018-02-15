@@ -16,7 +16,7 @@ public class Kodutoo {
      */
     public static void main(String[] args) {
         warrior p1 = new warrior(20, 5, 1);
-        warrior p2 = new warrior(20, 4, 2);
+        warrior p2 = new warrior(20, 4, 3);
         System.out.println(p1);
         System.out.println(p2);
         p1.fight(p2);

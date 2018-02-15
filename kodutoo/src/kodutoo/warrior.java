@@ -41,14 +41,24 @@ public class warrior {
         double w2Def = teine.getDefense();
         
         while(true) {
-            w2Hp = w2Hp-(w1Att-w2Def);
-            System.out.println("Sõdalane üks lõi teist sõdalast "+(w1Att-w2Def)+" võrra, sõdalasel elusid jäänud "+w2Hp+"/"+teine.getHealth());
+            if(w2Def >= w1Att) {
+                System.out.println("Sõdalane üks lõi teist sõdalast, kuid löök ei mõjunud. sõdalasel elusid jäänud "+w2Hp+"/"+teine.getHealth());
+            } else {
+                w2Hp = w2Hp-(w1Att-w2Def);
+                System.out.println("Sõdalane üks lõi teist sõdalast "+(w1Att-w2Def)+" võrra, sõdalasel elusid jäänud "+w2Hp+"/"+teine.getHealth());
+            }
+            
             if(w2Hp <= 0) {
                 System.out.println("Sõdalane üks võitis");
                 return true;
             }
-            w1Hp = w1Hp-(w2Att-w1Def);
+            if(w1Def >= w2Att) {
+                System.out.println("Sõdalane kaks lõi esimest sõdalast, kuid löök ei mõjunud. sõdalasel elusid jäänud "+w1Hp+"/"+getHealth());
+            } else {
+                w1Hp = w1Hp-(w2Att-w1Def);
             System.out.println("Sõdalane kaks lõi esimest sõdalast "+(w2Att-w1Def)+" võrra, sõdalasel elusid jäänud "+w1Hp+"/"+getHealth());
+            }
+          
             if(w1Hp <= 0) {
                 System.out.println("Sõdalane kaks võitis");
                 return false;
