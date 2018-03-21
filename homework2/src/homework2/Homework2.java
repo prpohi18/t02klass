@@ -18,15 +18,23 @@ public class Homework2 {
         companiesInfo c9 = new companiesInfo("Proekspert", 10692000, 1997, 140);
         companiesInfo c10 = new companiesInfo("Tieto", 18851000, 1996, 286);
         
+        clients cl1 = new clients("Swedbank AB", "Sweden", 1000000, 21, 50, 1000000);
+        clients cl2 = new clients("Ministry of Foreign Relations", "Estonia", 660000, 11, 20, 100000);
+        clients cl3 = new clients("Tallinn University", "Estonia", 20000, 1, 1, 1000);
+        clients cl4 = new clients("Department of Financial Affairs", "Oman", 25000000, 93, 100, 10000000);
+        clients cl5 = new clients("Ministry of Defence", "Israel", 13000000, 18, 80, 5000000);
+        clients cl6 = new clients("Road Administration", "Finland", 250000, 7, 2, 100000);
+        
+        
         
        
-            // scanner for user input
+        // scanner for user input
         Scanner name = new Scanner(System.in);
         System.out.println("Enter the name of a company: \n Nortal - Helmes - OKIA - Codeborne - Web Systems - Lavii - Knowbase - Zone - Proekspert - Tieto");
         String name1 = name.nextLine();
             //  System.out.println("Test: "+name1);
 
-            //  comparing user input and my Objects (probably it would be better to do a cycle here instead of if x10)
+        //  comparing user input and my Objects (probably it would be better to do a cycle here instead of if x10)
         if(name1.equals(c1.company)){                   //https://stackoverflow.com/questions/513832/how-do-i-compare-strings-in-java
             System.out.println("Company: "+c1.company+". Revenue per employee: "+c1.revenuePerEmployee()+" EUR. Active for: "+c1.activeYears()+" years.");
         } 
