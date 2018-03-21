@@ -119,3 +119,18 @@ public class Homework2and3 {
         }
     }
 }
+
+/*
+
+run:
+Enter the name of a company: 
+Choose from: Nortal - Helmes - OKIA - Codeborne - Lavii
+Codeborne
+---------------
+ * Company is Codeborne. Revenue per employee is 93264 EUR. Company has been active for 20 years.
+Codeborne meets the requirements for those clients:
+* Ministry of Foreign Relations whos average budget per project is 60454 EUR (11 projects in total).
+* Tallinn University whos average budget per project is 11250 EUR (2 projects in total).
+BUILD SUCCESSFUL (total time: 6 seconds)
+
+*/
