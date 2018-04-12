@@ -11,8 +11,8 @@ public class Klass {
     
 }
 /*
-Kera raadius on 10.0
-Kera raadius on 15.0
+Ringi raadius on 10.0
+Ringi raadius on 15.0
 Esimese ringi pindala on 314.0 ja ümbermõõt on 62.800000000000004
 Teise ringi pindala on 706.5 ja ümbermõõt on 94.2
 */
