@@ -11,6 +11,6 @@ public class Ring {
         return 2*3.14*raadius;
     }
     public String toString(){
-        return "Kera raadius on "+raadius;
+        return "Ringi raadius on "+raadius;
     }
 }
