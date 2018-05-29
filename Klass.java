@@ -47,8 +47,8 @@ public class Klass {
     
 
 /*
-Kogusumma: 5.88
+Kogusumma: 7.68
 kogu kogus: 9.0
-keskmine hind: 1.47
+keskmine hind: 1.92
 
 */
