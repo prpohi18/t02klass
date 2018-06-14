@@ -1,5 +1,13 @@
 package klass;
 
+public class soogid {
+    public String nimi;
+    public float hind, kogus;
+}
+
+
+package klass;
+
 public class Klass {
 
     
